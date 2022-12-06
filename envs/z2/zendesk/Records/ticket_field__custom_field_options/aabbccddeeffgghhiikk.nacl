@@ -1,0 +1,32 @@
+zendesk.ticket_field__custom_field_options __dc_testdynamiccontent___1111_tagger__00123_00123v_00125_00125bu__dator2@uuuuuuumuuuuuu {
+  name = "aabbccddeeffgghhiikk"
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.testDynamicContent }}}"
+  value = "dator2"
+  _parent = [
+    zendesk.ticket_field.instance.__dc_testdynamiccontent___1111_tagger@_00123_00123v_00125_00125bu,
+  ]
+}
+zendesk.ticket_field__custom_field_options aaaaaaa_3333__dc_testdynamiccontent___tagger_b_00123_00123v_00125_00125u__smartphone_surfplatta3@uuuuuuumuuuuuud {
+  name = "aabbccddeeffgghhiikk"
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.testDynamicContent }}}"
+  value = "smartphone/surfplatta3"
+  _parent = [
+    zendesk.ticket_field.instance.aaaaaaa_3333__dc_testdynamiccontent___tagger@b_00123_00123v_00125_00125u,
+  ]
+}
+zendesk.ticket_field__custom_field_options aaaaaaa_555555_tagger_bu__smartphone_surfplatta3666@uumuud {
+  name = "aabbccddeeffgghhiikk"
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.testDynamicContent }}}"
+  value = "smartphone/surfplatta3666"
+  _parent = [
+    zendesk.ticket_field.instance.aaaaaaa_555555_tagger@bu,
+  ]
+}
+zendesk.ticket_field__custom_field_options aaaaaaa_44444_tagger_bu__dator44@uumuu {
+  name = "aabbccddeeffgghhiikk"
+  raw_name = "{{${ zendesk.dynamic_content_item.instance.testDynamicContent }}}"
+  value = "dator44"
+  _parent = [
+    zendesk.ticket_field.instance.aaaaaaa_44444_tagger@bu,
+  ]
+}
