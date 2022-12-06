@@ -1,0 +1,16 @@
+zendesk.macro SRD___Don_t_Exclude_this_Macro@sbstsss {
+  title = "SRD - Don't Exclude this Macro"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "priority"
+      value = "urgent"
+    },
+    {
+      field = "type"
+      value = "task"
+    },
+  ]
+  raw_title = "SRD - Don't Exclude this Macro"
+}

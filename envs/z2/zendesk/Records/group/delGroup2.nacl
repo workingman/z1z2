@@ -1,0 +1,7 @@
+zendesk.group delGroup2 {
+  is_public = true
+  name = "delGroup2"
+  description = "adaasa..."
+  default = false
+  deleted = false
+}

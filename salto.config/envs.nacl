@@ -6,5 +6,11 @@ envs {
         zendesk = "zendesk"
       }
     },
+    {
+      name = "z2"
+      accountToServiceName = {
+        zendesk = "zendesk"
+      }
+    },
   ]
 }

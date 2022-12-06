@@ -1,0 +1,35 @@
+zendesk.trigger GWR_DC_Trigger1@s {
+  title = "GWR DC Trigger1"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "set_tags"
+      value = [
+        zendesk.tag.instance.gwrdc1,
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = "geoffrey.routledge@salto.io"
+      },
+      {
+        field = zendesk.ticket_field.instance.GWR_DC_Field1_tagger@ssu
+        operator = "is"
+        value = zendesk.ticket_field__custom_field_options.instance.GWR_DC_Field1_tagger_ssu____dc_gwr_dc1__@uuumuuuuvuuu
+      },
+    ]
+  }
+  description = "Trigger with dynamic content"
+  raw_title = "GWR DC Trigger1"
+  category_id = zendesk.trigger_category.instance.Notifications
+}
