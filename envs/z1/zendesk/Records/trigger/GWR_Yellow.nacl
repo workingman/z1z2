@@ -21,4 +21,5 @@ zendesk.trigger GWR_Yellow@s {
   }
   raw_title = "GWR Yellow"
   category_id = zendesk.trigger_category.instance.Notifications
+  description = "__"
 }
