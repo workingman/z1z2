@@ -1,0 +1,16 @@
+zendesk.ticket_form BronzeForm {
+  raw_name = "BronzeForm"
+  raw_display_name = "Get all your Bronze"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Status_status,
+    zendesk.ticket_field.instance.Group_group,
+    zendesk.ticket_field.instance.Assignee_assignee,
+    zendesk.ticket_field.instance.Subject_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.The_bronzer_the_better_checkbox@sssu,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+}

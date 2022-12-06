@@ -1,0 +1,11 @@
+zendesk.webhook test3 {
+  name = "test3"
+  description = "desc"
+  status = "active"
+  subscriptions = [
+    "conditional_ticket_events",
+  ]
+  endpoint = "https://example.com/status/200"
+  http_method = "GET"
+  request_format = "json"
+}

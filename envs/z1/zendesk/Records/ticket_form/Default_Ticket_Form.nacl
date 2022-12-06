@@ -1,0 +1,19 @@
+zendesk.ticket_form Default_Ticket_Form@s {
+  raw_name = "Default Ticket Form"
+  raw_display_name = "Default Ticket Form"
+  end_user_visible = true
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Status_status,
+    zendesk.ticket_field.instance.Group_group,
+    zendesk.ticket_field.instance.Assignee_assignee,
+    zendesk.ticket_field.instance.Subject_subject,
+    zendesk.ticket_field.instance.Description_description,
+    zendesk.ticket_field.instance.zip_code_with_validation_regexp@sssu,
+    zendesk.ticket_field.instance.Free_checkbox,
+    zendesk.ticket_field.instance.Git_Zen_data_text@buu,
+    zendesk.ticket_field.instance.GoldField_checkbox,
+  ]
+  active = true
+  default = true
+  in_all_brands = true
+}

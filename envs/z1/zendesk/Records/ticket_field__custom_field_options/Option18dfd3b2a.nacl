@@ -1,0 +1,8 @@
+zendesk.ticket_field__custom_field_options Testticket_field8dfd3b2a_tagger__v1e14541bc {
+  name = "Option18dfd3b2a"
+  raw_name = "Option18dfd3b2a"
+  value = "v1e14541bc"
+  _parent = [
+    zendesk.ticket_field.instance.Testticket_field8dfd3b2a_tagger,
+  ]
+}

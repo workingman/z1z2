@@ -1,0 +1,18 @@
+zendesk.ticket_field Testticket_field8dfd3b2a_tagger {
+  type = "tagger"
+  raw_title = "Testticket_field8dfd3b2a"
+  raw_description = ""
+  active = true
+  required = false
+  collapsed_for_agents = false
+  raw_title_in_portal = "Testticket_field8dfd3b2a"
+  visible_in_portal = false
+  editable_in_portal = false
+  required_in_portal = false
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.Testticket_field8dfd3b2a_tagger__v1e14541bc,
+    zendesk.ticket_field__custom_field_options.instance.Testticket_field8dfd3b2a_tagger__v2e14541bc,
+  ]
+  default_custom_field_option = zendesk.ticket_field__custom_field_options.instance.Testticket_field8dfd3b2a_tagger__v1e14541bc
+}

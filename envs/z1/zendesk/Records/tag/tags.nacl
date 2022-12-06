@@ -1,0 +1,57 @@
+zendesk.tag Social {
+  id = "Social"
+}
+zendesk.tag agent_ooo {
+  id = "agent_ooo"
+}
+zendesk.tag boom {
+  id = "boom"
+}
+zendesk.tag checked32 {
+  id = "checked32"
+}
+zendesk.tag customer_engineering {
+  id = "customer_engineering"
+}
+zendesk.tag do_now {
+  id = "do_now"
+}
+zendesk.tag enterprise_account {
+  id = "enterprise_account"
+}
+zendesk.tag gwrdc1 {
+  id = "gwrdc1"
+}
+zendesk.tag hadas_test_tag {
+  id = "hadas_test_tag"
+}
+zendesk.tag ispurple {
+  id = "ispurple"
+}
+zendesk.tag isred {
+  id = "isred"
+}
+zendesk.tag isyellow {
+  id = "isyellow"
+}
+zendesk.tag mid_market_account {
+  id = "mid_market_account"
+}
+zendesk.tag overdue {
+  id = "overdue"
+}
+zendesk.tag product_access_request_dark_mode@uufu {
+  id = "product_access_request:dark_mode"
+}
+zendesk.tag product_access_request_product_b@uufu {
+  id = "product_access_request:product_b"
+}
+zendesk.tag silver {
+  id = "silver"
+}
+zendesk.tag small_market_account {
+  id = "small_market_account"
+}
+zendesk.tag titanium {
+  id = "titanium"
+}

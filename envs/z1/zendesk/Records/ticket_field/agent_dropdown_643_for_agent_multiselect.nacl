@@ -1,0 +1,17 @@
+zendesk.ticket_field agent_dropdown_643_for_agent_multiselect@ssssu {
+  type = "multiselect"
+  raw_title = "agent dropdown 643 for agent"
+  raw_description = "description for end user"
+  active = true
+  required = true
+  collapsed_for_agents = false
+  raw_title_in_portal = "agent dropdown 643 for user"
+  visible_in_portal = true
+  editable_in_portal = true
+  required_in_portal = true
+  removable = true
+  custom_field_options = [
+    zendesk.ticket_field__custom_field_options.instance.agent_dropdown_643_for_agent_multiselect_ssssu__v1@uuuuumuu,
+    zendesk.ticket_field__custom_field_options.instance.agent_dropdown_643_for_agent_multiselect_ssssu__v2_modified@uuuuumuuu,
+  ]
+}

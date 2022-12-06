@@ -1,0 +1,12 @@
+zendesk.app_installation XR_App_772507@su {
+  app_id = 772507
+  product = "support"
+  settings = {
+    name = "XR App"
+    title = "XR App"
+  }
+  enabled = true
+  recurring_payment = false
+  collapsible = true
+  has_incomplete_subscription = false
+}

@@ -1,0 +1,8 @@
+zendesk.organization_field org_size {
+  type = "integer"
+  key = "org_size"
+  raw_title = "Org Size"
+  raw_description = "Number of users in Org"
+  active = true
+  system = false
+}

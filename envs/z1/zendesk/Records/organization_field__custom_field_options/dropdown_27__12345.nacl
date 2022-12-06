@@ -1,0 +1,7 @@
+zendesk.organization_field__custom_field_options dropdown_27__12345 {
+  raw_name = "1234"
+  value = "12345"
+  _parent = [
+    zendesk.organization_field.instance.dropdown_27,
+  ]
+}

@@ -1,0 +1,6 @@
+zendesk.macro_categories {
+  categories = [
+    "MacroCategory",
+    "SRD - Access request",
+  ]
+}

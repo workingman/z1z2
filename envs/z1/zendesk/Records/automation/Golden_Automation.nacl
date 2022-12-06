@@ -1,0 +1,31 @@
+zendesk.automation Golden_Automation@s {
+  title = "Golden Automation"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.GoldField_checkbox
+      value = "false"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.GoldForm
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "new"
+      },
+      {
+        field = "NEW"
+        operator = "is"
+        value = "4"
+      },
+    ]
+  }
+  raw_title = "Golden Automation"
+}

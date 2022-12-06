@@ -1,0 +1,31 @@
+zendesk.automation Bronze_Automation_edited_in_service@s {
+  title = "Bronze Automation edited in service"
+  active = true
+  default = false
+  actions = [
+    {
+      field = zendesk.ticket_field.instance.The_bronzer_the_better_checkbox@sssu
+      value = "true"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.BronzeForm
+      },
+      {
+        field = "status"
+        operator = "is"
+        value = "pending"
+      },
+      {
+        field = "NEW"
+        operator = "is"
+        value = "6"
+      },
+    ]
+  }
+  raw_title = "Bronze Automation edited in service"
+}

@@ -1,0 +1,17 @@
+zendesk {
+  fetch = {
+    include = [
+      {
+        type = ".*"
+      },
+    ]
+    exclude = [
+      {
+        type = "organization"
+      },
+      {
+        type = "oauth_global_client"
+      },
+    ]
+  }
+}

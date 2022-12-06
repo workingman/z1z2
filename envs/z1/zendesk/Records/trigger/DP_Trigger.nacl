@@ -1,0 +1,24 @@
+zendesk.trigger DP_Trigger@s {
+  title = "DP Trigger"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "current_tags"
+      value = [
+        zendesk.tag.instance.do_now,
+      ]
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "priority"
+        operator = "is"
+        value = "urgent"
+      },
+    ]
+  }
+  raw_title = "DP Trigger"
+  category_id = zendesk.trigger_category.instance.Custom_Events@s
+}

@@ -1,0 +1,15 @@
+zendesk.ticket_form Form_13@s {
+  raw_name = "Form 13"
+  raw_display_name = ""
+  end_user_visible = false
+  ticket_field_ids = [
+    zendesk.ticket_field.instance.Status_status,
+    zendesk.ticket_field.instance.Group_group,
+    zendesk.ticket_field.instance.Assignee_assignee,
+    zendesk.ticket_field.instance.Subject_subject,
+    zendesk.ticket_field.instance.Description_description,
+  ]
+  active = true
+  default = false
+  in_all_brands = true
+}

@@ -1,0 +1,217 @@
+zendesk.view Complex_View@s {
+  title = "Complex View"
+  active = true
+  default = false
+  description = "View ממש מסובך so we'll also see unicode stuff בעברית"
+  execution = {
+    group_by = zendesk.ticket_field.instance.zip_code_with_validation_regexp@sssu
+    group_order = "asc"
+    sort_by = zendesk.ticket_field.instance.Severity_integer
+    sort_order = "desc"
+    group = {
+      id = zendesk.ticket_field.instance.zip_code_with_validation_regexp@sssu
+      title = "zip code with validation"
+      type = "regexp"
+      filterable = false
+      sortable = true
+      order = "asc"
+    }
+    sort = {
+      id = zendesk.ticket_field.instance.Severity_integer
+      title = "Severity"
+      type = "integer"
+      filterable = false
+      sortable = true
+      order = "desc"
+    }
+    columns = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = zendesk.ticket_field.instance.zip_code_with_validation_regexp@sssu
+        title = "zip code with validation"
+        type = "regexp"
+        filterable = false
+        sortable = true
+      },
+    ]
+    fields = [
+      {
+        id = "satisfaction_score"
+        title = "Satisfaction"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "subject"
+        title = "Subject"
+        filterable = false
+        sortable = false
+      },
+      {
+        id = "requester"
+        title = "Requester"
+        filterable = true
+        sortable = true
+      },
+      {
+        id = "created"
+        title = "Requested"
+        filterable = false
+        sortable = true
+      },
+      {
+        id = "assignee"
+        title = "Assignee"
+        filterable = true
+        sortable = true
+      },
+    ]
+    custom_fields = [
+      {
+        id = zendesk.ticket_field.instance.zip_code_with_validation_regexp@sssu
+        title = "zip code with validation"
+        type = "regexp"
+        filterable = false
+        sortable = true
+      },
+    ]
+  }
+  conditions = {
+    all = [
+      {
+        field = "locale_id"
+        operator = "is"
+        value = zendesk.locale.instance.he
+      },
+      {
+        field = "status"
+        operator = "less_than"
+        value = "solved"
+      },
+      {
+        field = "brand_id"
+        operator = "is_not"
+        value = zendesk.brand.instance.Salto
+      },
+      {
+        field = "ticket_form_id"
+        operator = "is"
+        value = zendesk.ticket_form.instance.Amazing_ticket_form@s
+      },
+      {
+        field = "type"
+        operator = "is"
+        value = "problem"
+      },
+      {
+        field = "priority"
+        operator = "greater_than"
+        value = "normal"
+      },
+      {
+        field = "group_id"
+        operator = "is"
+        value = zendesk.group.instance.Support
+      },
+      {
+        field = "organization_id"
+        operator = "is"
+        value = "1500421645662"
+      },
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.boom,
+        ]
+      },
+      {
+        field = "description_includes_word"
+        operator = "is_not"
+        value = "מטורף"
+      },
+      {
+        field = "via_id"
+        operator = "is_not"
+        value = zendesk.channel.instance.Twitter
+      },
+      {
+        field = "recipient"
+        operator = "is"
+        value = "support@d3v-salto.zendesk.com"
+      },
+      {
+        field = "NEW"
+        operator = "greater_than_business_hours"
+        value = "4"
+      },
+      {
+        field = "sla_next_breach_at"
+        operator = "greater_than_business_hours"
+        value = "6"
+      },
+      {
+        field = "ticket_is_public"
+        operator = "is"
+        value = "private"
+      },
+      {
+        field = "skills_match"
+        operator = "is"
+        value = "current_skills"
+      },
+      {
+        field = zendesk.ticket_field.instance.Product_components_multiselect@su
+        operator = "includes"
+        value = zendesk.ticket_field__custom_field_options.instance.Product_components_multiselect_su__component_a@uumuuu
+      },
+      {
+        field = zendesk.ticket_field.instance.Testticket_field5b22ccfd_multiselect
+        operator = "not_present"
+        value = ""
+      },
+      {
+        field = zendesk.ticket_field.instance.agent_dropdown_643_for_agent_multiselect@ssssu
+        operator = "includes"
+        value = zendesk.ticket_field__custom_field_options.instance.agent_dropdown_643_for_agent_multiselect_ssssu__v2_modified@uuuuumuuu
+      },
+    ]
+  }
+  restriction = {
+    type = "Group"
+    ids = [
+      zendesk.group.instance.Support,
+      zendesk.group.instance.Support2,
+    ]
+  }
+  raw_title = "Complex View"
+}
