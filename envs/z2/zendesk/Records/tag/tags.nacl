@@ -1,0 +1,45 @@
+zendesk.tag cusotmer_engineering {
+  id = "cusotmer_engineering"
+}
+zendesk.tag customer_engineering {
+  id = "customer_engineering"
+}
+zendesk.tag enterprise_account {
+  id = "enterprise_account"
+}
+zendesk.tag gwrdc1 {
+  id = "gwrdc1"
+}
+zendesk.tag isgeoff {
+  id = "isgeoff"
+}
+zendesk.tag ispurple {
+  id = "ispurple"
+}
+zendesk.tag isred {
+  id = "isred"
+}
+zendesk.tag isyellow {
+  id = "isyellow"
+}
+zendesk.tag mid_market_account {
+  id = "mid_market_account"
+}
+zendesk.tag product_access_request_dark_mode@uufu {
+  id = "product_access_request:dark_mode"
+}
+zendesk.tag product_access_request_product_b@uufu {
+  id = "product_access_request:product_b"
+}
+zendesk.tag silver {
+  id = "silver"
+}
+zendesk.tag small_market_account {
+  id = "small_market_account"
+}
+zendesk.tag titanium {
+  id = "titanium"
+}
+zendesk.tag _ustom@_00231 {
+  id = "çustom"
+}

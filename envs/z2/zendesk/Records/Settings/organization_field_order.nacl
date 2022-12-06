@@ -1,0 +1,9 @@
+zendesk.organization_field_order {
+  active = [
+    zendesk.organization_field.instance.org_field_1,
+    zendesk.organization_field.instance.orgfield2,
+    zendesk.organization_field.instance.org_size,
+  ]
+  inactive = [
+  ]
+}

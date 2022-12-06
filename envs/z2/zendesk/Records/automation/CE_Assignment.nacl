@@ -1,0 +1,33 @@
+zendesk.automation CE_Assignment@s {
+  title = "CE Assignment"
+  active = true
+  default = false
+  actions = [
+    {
+      field = "assignee_id"
+      value = "geoffrey.routledge@salto.io"
+    },
+  ]
+  conditions = {
+    all = [
+      {
+        field = "assignee_id"
+        operator = "is"
+        value = ""
+      },
+      {
+        field = "NEW"
+        operator = "greater_than"
+        value = "24"
+      },
+      {
+        field = "current_tags"
+        operator = "includes"
+        value = [
+          zendesk.tag.instance.cusotmer_engineering,
+        ]
+      },
+    ]
+  }
+  raw_title = "CE Assignment"
+}
